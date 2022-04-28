@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:recipeapp/categories_screen.dart';
+import 'package:flutter_complete_guide/meals.dart';
+import 'categories_screen.dart';
+import 'meals.dart';
+
+
+import 'categories_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +16,34 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'UniGrub',
+      title: 'Uni Grub',
       theme: ThemeData(
-      primarySwatch: Colors.red,
+      primarySwatch: Colors.pink,
+        accentColor: Colors.amber,
+        canvasColor: Color.fromRGBO(255, 254, 229, 1),
+        fontFamily: 'Raleway',
+        textTheme: ThemeData.light().textTheme.copyWith(
+          bodyText1: TextStyle(
+            color: Color.fromRGBO(20, 51, 51, 1),
+          ),
+         bodyText2: TextStyle(
+          color:  Color.fromRGBO(20, 51, 51, 1),
+        ),
+          subtitle1: TextStyle(
+            fontSize: 20,
+          fontFamily: 'RobotoCondensed',
+            fontWeight: FontWeight.bold,
+
+        )
+        )
+
       ),
-      home: const CategoriesScreen() ,
+      //home: CategoriesScreen() ,
+      routes: {
+
+        '/' : (ctx) => CategoriesScreen(),
+        Meals.routeName: (ctx) => Meals(),
+       },
     );
   }
 }

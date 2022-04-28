@@ -1,54 +1,244 @@
 import 'package:flutter/material.dart';
 import './models/category.dart';
-
+import 'recipe.dart';
 
 const CATEGORIES = [
+  Category(title: 'Italian', id: 'c1', color: Colors.redAccent),
+  Category(title: 'Indian', id: 'c2', color: Colors.redAccent),
+  Category(title: 'Quick & Easy', id: 'c3', color: Colors.redAccent),
+  Category(title: 'Under £1', id: 'c4', color: Colors.redAccent),
+  Category(title: 'Breakfast', id: 'c5', color: Colors.redAccent),
+  Category(title: 'Mexican', id: 'c6', color: Colors.redAccent),
+  Category(title: 'Jamaican', id: 'c7', color: Colors.redAccent),
+  Category(title: 'Chinese', id: 'c8', color: Colors.redAccent),
+  Category(title: 'Thai', id: 'c9', color: Colors.redAccent),
+  Category(title: 'Healthy', id: 'c10', color: Colors.redAccent),
+];
 
-Category(
-    title: 'Italian',
-    id: 'c1',
-    color: Colors.redAccent
-),
-  Category(
-      title: 'Indian',
-      id: 'c1',
-      color: Colors.redAccent
+const RECIPES = const [
+  Recipe(
+    id: 'm1',
+    categories: ['c1'],
+    title: 'Tuna pasta bake',
+    imageUrl: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-51616_12-796faab.jpg?quality=90&webp=true&resize=300,272',
+    ingredients: [
+      '600g penne',
+      '50g butter',
+      '50g plain flour'
+          '600ml milk'
+          '250g grated cheddar',
+      '2 x 160g tuna, drained',
+      '330g canned sweetcorn, drained',
+      'handful of chopped parsley'
+    ],
+    steps: [
+      'Boil 600g rigatoni for 2 mins less time than stated on the pack'
+    'To make the sauce, melt 50g butter in a saucepan and stir in 50g plain flour'
+    'Cook for 1 min, then gradually stir in 600ml milk to make a thick white sauce',
+    'Remove from the heat and stir in all but a handful of the 250g grated cheddar',
+      'Drain the pasta, mix with the white sauce, two 160g drained cans tuna, one 330g drained can sweetcorn and a large handful of chopped parsley, then season',
+      'Transfer to a baking dish and top with the rest of the grated cheddar.',
+      'Bake for 15-20 mins until the cheese on top is golden and starting to brown.',
+    ],
+    duration: 40,
+    complexity: Complexity.Rookie,
+    affordability: Affordability.VeryCheap,
+    isVeryCheap: true,
+    isCheapish: true,
+    isCheap: true,
+    isVegan: false,
+    isVeggie: true,
   ),
-  Category(
-      title: 'Quick & Easy',
-      id: 'c1',
-      color: Colors.redAccent
+  Recipe(
+    id: 'm1',
+    categories: ['c1'],
+    title: 'title',
+    imageUrl: 'imageUrl',
+    ingredients: [''],
+    steps: [''],
+    duration: 10,
+    complexity: Complexity.Rookie,
+    affordability: Affordability.VeryCheap,
+    isVeryCheap: true,
+    isCheapish: true,
+    isCheap: true,
+    isVegan: false,
+    isVeggie: true,
   ),
-  Category(
-      title: 'Under £1',
-      id: 'c1',
-      color: Colors.redAccent
+  Recipe(
+    id: 'm1',
+    categories: ['c1'],
+    title: 'title',
+    imageUrl: 'imageUrl',
+    ingredients: [''],
+    steps: [''],
+    duration: 10,
+    complexity: Complexity.Rookie,
+    affordability: Affordability.VeryCheap,
+    isVeryCheap: true,
+    isCheapish: true,
+    isCheap: true,
+    isVegan: false,
+    isVeggie: true,
   ),
-  Category(
-      title: 'Breakfast',
-      id: 'c1',
-      color: Colors.redAccent
+  Recipe(
+    id: 'm1',
+    categories: ['c1'],
+    title: 'title',
+    imageUrl: 'imageUrl',
+    ingredients: [''],
+    steps: [''],
+    duration: 10,
+    complexity: Complexity.Rookie,
+    affordability: Affordability.VeryCheap,
+    isVeryCheap: true,
+    isCheapish: true,
+    isCheap: true,
+    isVegan: false,
+    isVeggie: true,
   ),
-  Category(
-      title: 'Mexican',
-      id: 'c1',
-      color: Colors.redAccent
+  Recipe(
+    id: 'm1',
+    categories: ['c1'],
+    title: 'title',
+    imageUrl: 'imageUrl',
+    ingredients: [''],
+    steps: [''],
+    duration: 10,
+    complexity: Complexity.Rookie,
+    affordability: Affordability.VeryCheap,
+    isVeryCheap: true,
+    isCheapish: true,
+    isCheap: true,
+    isVegan: false,
+    isVeggie: true,
   ),
-  Category(
-      title: 'Jamaican',
-      id: 'c1',
-      color: Colors.redAccent
+  Recipe(
+    id: 'm1',
+    categories: ['c1'],
+    title: 'title',
+    imageUrl: 'imageUrl',
+    ingredients: [''],
+    steps: [''],
+    duration: 10,
+    complexity: Complexity.Rookie,
+    affordability: Affordability.VeryCheap,
+    isVeryCheap: true,
+    isCheapish: true,
+    isCheap: true,
+    isVegan: false,
+    isVeggie: true,
   ),
-
-
-  
-
-
-
-
-
-
-
-
-
+  Recipe(
+    id: 'm1',
+    categories: ['c1'],
+    title: 'title',
+    imageUrl: 'imageUrl',
+    ingredients: [''],
+    steps: [''],
+    duration: 10,
+    complexity: Complexity.Rookie,
+    affordability: Affordability.VeryCheap,
+    isVeryCheap: true,
+    isCheapish: true,
+    isCheap: true,
+    isVegan: false,
+    isVeggie: true,
+  ),
+  Recipe(
+    id: 'm1',
+    categories: ['c1'],
+    title: 'title',
+    imageUrl: 'imageUrl',
+    ingredients: [''],
+    steps: [''],
+    duration: 10,
+    complexity: Complexity.Rookie,
+    affordability: Affordability.VeryCheap,
+    isVeryCheap: true,
+    isCheapish: true,
+    isCheap: true,
+    isVegan: false,
+    isVeggie: true,
+  ),
+  Recipe(
+    id: 'm1',
+    categories: ['c1'],
+    title: 'title',
+    imageUrl: 'imageUrl',
+    ingredients: [''],
+    steps: [''],
+    duration: 10,
+    complexity: Complexity.Rookie,
+    affordability: Affordability.VeryCheap,
+    isVeryCheap: true,
+    isCheapish: true,
+    isCheap: true,
+    isVegan: false,
+    isVeggie: true,
+  ),
+  Recipe(
+    id: 'm1',
+    categories: ['c1'],
+    title: 'title',
+    imageUrl: 'imageUrl',
+    ingredients: [''],
+    steps: [''],
+    duration: 10,
+    complexity: Complexity.Rookie,
+    affordability: Affordability.VeryCheap,
+    isVeryCheap: true,
+    isCheapish: true,
+    isCheap: true,
+    isVegan: false,
+    isVeggie: true,
+  ),
+  Recipe(
+    id: 'm1',
+    categories: ['c1'],
+    title: 'title',
+    imageUrl: 'imageUrl',
+    ingredients: [''],
+    steps: [''],
+    duration: 10,
+    complexity: Complexity.Rookie,
+    affordability: Affordability.VeryCheap,
+    isVeryCheap: true,
+    isCheapish: true,
+    isCheap: true,
+    isVegan: false,
+    isVeggie: true,
+  ),
+  Recipe(
+    id: 'm1',
+    categories: ['c1'],
+    title: 'title',
+    imageUrl: 'imageUrl',
+    ingredients: [''],
+    steps: [''],
+    duration: 10,
+    complexity: Complexity.Rookie,
+    affordability: Affordability.VeryCheap,
+    isVeryCheap: true,
+    isCheapish: true,
+    isCheap: true,
+    isVegan: false,
+    isVeggie: true,
+  ),
+  Recipe(
+    id: 'm1',
+    categories: ['c1'],
+    title: 'title',
+    imageUrl: 'imageUrl',
+    ingredients: [''],
+    steps: [''],
+    duration: 10,
+    complexity: Complexity.Rookie,
+    affordability: Affordability.VeryCheap,
+    isVeryCheap: true,
+    isCheapish: true,
+    isCheap: true,
+    isVegan: false,
+    isVeggie: true,
+  ),
 ];
