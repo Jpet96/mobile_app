@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 
-enum Complexity { Newbie, Rookie, Cheffing }
+enum Complexity { Newbie, Rookie, Chef }
 
-enum Affordability { VeryCheap, Cheapish, Cheap }
+enum Affordability { Cheap, Affordable, Luxurious }
 
 class Recipe {
   final String id;
@@ -14,9 +14,6 @@ class Recipe {
   final int duration;
   final Complexity complexity;
   final Affordability affordability;
-  final bool isVeryCheap;
-  final bool isCheapish;
-  final bool isCheap;
   final bool isVegan;
   final bool isVeggie;
 
@@ -30,9 +27,6 @@ class Recipe {
       @required this.duration,
       @required this.complexity,
       @required this.affordability,
-      @required this.isVeryCheap,
-      @required this.isCheapish,
-      @required this.isCheap,
       @required this.isVegan,
       @required this.isVeggie});
 }
